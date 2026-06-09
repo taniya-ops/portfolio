@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taniya Tolson</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family:'Inter',sans-serif;
+  background:#f5f3ef;
+  color:#111;
+  overflow-x:hidden;
+}
+/* BACKGROUND BLOBS */
+.blob{
+  position:fixed;
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  filter:blur(120px);
+  z-index:-1;
+}
+.blob1{background:#d6c6ff; top:-50px; left:-50px;}
+.blob2{background:#ffd6c0; bottom:-50px; right:-50px;}
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:25px 10%;
+}
+nav ul{
+  display:flex;
+  gap:20px;
+  list-style:none;
+  cursor:pointer;
+}
+/* HERO */
+.hero{
+  padding:120px 10%;
+}
+.name{
+  font-family:'Playfair Display',serif;
+  font-size:4.5rem;
+}
+.tagline{
+  margin-top:10px;
+  color:#555;
+}
+/* SECTIONS */
+section{
+  padding:80px 10%;
+}
+h2{
+  margin-bottom:20px;
+}
+/* CARDS */
+.card{
+  background:rgba(255,255,255,0.6);
+  padding:20px;
+  margin-top:20px;
+  border-radius:12px;
+  backdrop-filter:blur(10px);
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-6px) scale(1.01);
+}
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+/* SKILLS */
+.skills ul{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.skills li{
+  padding:8px 15px;
+  border:1px solid #ccc;
+  border-radius:20px;
+}
+/* CONTACT */
+.contact{
+  border-top:1px solid #ddd;
+}
+/* REVEAL */
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:0.8s;
+}
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+/* CURSOR GLOW */
+.cursor{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  position:fixed;
+  background:rgba(0,0,0,0.1);
+  pointer-events:none;
+  transform:translate(-50%,-50%);
+  transition:0.1s;
+}
+</style>
+</head>
+<body>
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="cursor"></div>
+<!-- NAV -->
+<nav>
+  <h2>Taniya</h2>
+  <ul>
+    <li onclick="scrollToSection('about')">About</li>
+    <li onclick="scrollToSection('projects')">Projects</li>
+    <li onclick="scrollToSection('achievements')">Achievements</li>
+    <li onclick="scrollToSection('contact')">Contact</li>
+  </ul>
+</nav>
+<!-- HERO -->
+<section class="hero">
+  <h1 class="name">Taniya Tolson</h1>
+  <p class="tagline">Engineering Student crafting modern digital experiences.</p>
+</section>
+<!-- ABOUT -->
+<section id="about" class="reveal">
+  <h2>About Me</h2>
+  <p>I am an engineering student passionate about building clean, modern and impactful digital solutions. I enjoy combining creativity with technical skills.</p>
+</section>
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>🌐 Portfolio Website</h3>
+      <p>Modern responsive portfolio with animations and minimal UI.</p>
+    </div>
+<div class="card">
+  <h3>🌦 Weather App</h3>
+  <p>Real-time weather app using API integration.</p>
+</div>
+<div class="card">
+  <h3>📝 Task Manager</h3>
+  <p>Simple productivity app for managing tasks efficiently.</p>
+</div>
+  </div>
+</section>
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="reveal">
+  <h2>Achievements</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>🎯 Academic Excellence</h3>
+      <p>Maintaining strong academic performance in engineering.</p>
+    </div>
+<div class="card">
+  <h3>💡 Hackathons</h3>
+  <p>Participated in coding competitions and innovation events.</p>
+</div>
+<div class="card">
+  <h3>🚀 Self Learning</h3>
+  <p>Built multiple projects through self-driven learning.</p>
+</div>
+  </div>
+</section>
+<!-- SKILLS -->
+<section class="skills reveal">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>GitHub</li>
+  </ul>
+</section>
+<!-- CONTACT -->
+<section id="contact" class="contact reveal">
+  <h2>Contact</h2>
+  <p>Email: tolsontaniya@gmail.com</p>
+  <p>GitHub: taniya-ops</p>
+</section>
+<script>
+// SCROLL REVEAL
+const reveals=document.querySelectorAll(".reveal");
+window.addEventListener("scroll",()=>{
+  reveals.forEach(el=>{
+    const top=el.getBoundingClientRect().top;
+    if(top<window.innerHeight-100){
+      el.classList.add("active");
+    }
+  });
+});
+// SMOOTH SCROLL
+function scrollToSection(id){
+  document.getElementById(id).scrollIntoView({behavior:"smooth"});
+}
+// CURSOR EFFECT
+const cursor=document.querySelector(".cursor");
+document.addEventListener("mousemove",(e)=>{
+  cursor.style.left=e.clientX+"px";
+  cursor.style.top=e.clientY+"px";
+});
+</script>
+</body>
+</html>
