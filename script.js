@@ -1,126 +1,115 @@
-// =========================
-// SMOOTH APPEAR ANIMATION
-// =========================
+const reveals = document.querySelectorAll(".reveal");
 
-const sections = document.querySelectorAll(
-  ".service-card, .project-card, .journey-card, .stats-card, .skill-pill"
-);
+function revealSections() {
 
-window.addEventListener("scroll", () => {
+    reveals.forEach((element) => {
 
-  sections.forEach((section) => {
+        const windowHeight = window.innerHeight;
 
-    const sectionTop = section.getBoundingClientRect().top;
+        const elementTop =
+            element.getBoundingClientRect().top;
 
-    if(sectionTop < window.innerHeight - 100){
+        const revealPoint = 120;
 
-      section.classList.add("show");
+        if (elementTop < windowHeight - revealPoint) {
+
+            element.classList.add("active");
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealSections);
+
+revealSections();
+const text =
+"Aspiring Full Stack Developer";
+
+const typingText =
+document.getElementById("typing-text");
+
+let i = 0;
+
+function typeWriter(){
+
+    if(i < text.length){
+
+        typingText.innerHTML +=
+        text.charAt(i);
+
+        i++;
+
+        setTimeout(typeWriter,70);
+    }
+}
+
+typeWriter();
+const sections =
+document.querySelectorAll("section");
+
+const navLinks =
+document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll",()=>{
+
+    let current = "";
+
+    sections.forEach(section=>{
+
+        const sectionTop =
+        section.offsetTop;
+
+        if(scrollY >= sectionTop - 150){
+
+            current =
+            section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link=>{
+
+        link.classList.remove("active");
+
+        if(
+        link.getAttribute("href")
+        ===
+        `#${current}`
+        ){
+            link.classList.add("active");
+        }
+    });
+
+});
+const navbar =
+document.querySelector(".navbar");
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY > 50){
+
+        navbar.classList.add("navbar-scroll");
 
     }
 
-  });
+    else{
+
+        navbar.classList.remove("navbar-scroll");
+    }
 
 });
+const menuToggle =
+document.querySelector(".menu-toggle");
 
+const navMenu =
+document.querySelector(".nav-links");
 
+if(menuToggle){
 
+    menuToggle.addEventListener("click",()=>{
 
-// =========================
-// TYPING EFFECT
-// =========================
+        navMenu.classList.toggle("active");
 
-const text = [
-  "Frontend Developer",
-  "UI/UX Designer",
-  "Aspiring Full Stack Developer",
-  "Creative Web Designer"
-];
+    });
 
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
-
-(function type(){
-
-  if(count === text.length){
-    count = 0;
-  }
-
-  currentText = text[count];
-
-  letter = currentText.slice(0, ++index);
-
-  document.querySelector(".typing-text").textContent = letter;
-
-  if(letter.length === currentText.length){
-
-    count++;
-
-    index = 0;
-
-    setTimeout(type, 1500);
-
-  } else {
-
-    setTimeout(type, 100);
-
-  }
-
-})();
-
-
-
-
-// =========================
-// NAVBAR SHADOW ON SCROLL
-// =========================
-
-const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll", () => {
-
-  if(window.scrollY > 20){
-
-    navbar.style.boxShadow = "0 10px 30px rgba(0,0,0,0.08)";
-
-  } else {
-
-    navbar.style.boxShadow = "none";
-
-  }
-
-});
-
-
-
-
-// =========================
-// BUTTON RIPPLE EFFECT
-// =========================
-
-const buttons = document.querySelectorAll("button");
-
-buttons.forEach((button) => {
-
-  button.addEventListener("click", function(e){
-
-    let x = e.clientX - e.target.offsetLeft;
-    let y = e.clientY - e.target.offsetTop;
-
-    let ripple = document.createElement("span");
-
-    ripple.style.left = `${x}px`;
-    ripple.style.top = `${y}px`;
-
-    ripple.classList.add("ripple");
-
-    this.appendChild(ripple);
-
-    setTimeout(() => {
-      ripple.remove();
-    }, 600);
-
-  });
-
-});
+}

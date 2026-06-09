@@ -3,605 +3,495 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Taniya Tolson | Portfolio</title>
+<title>Taniya Tolson Portfolio</title>
 
-    <!-- GOOGLE FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- CSS FILE -->
-
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
+<!-- NAVIGATION -->
 
-    <header class="navbar">
+<header class="header">
 
-        <div class="logo">
-            Taniya
-        </div>
+<nav class="navbar">
 
-        <nav>
+<div class="logo">
+Taniya.
+</div>
 
-            <a href="#home">Home</a>
+<ul class="nav-links">
 
-            <a href="#services">Services</a>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
 
-            <a href="#skills">Skills</a>
+</ul>
 
-            <a href="#projects">Projects</a>
+<a href="#contact" class="nav-btn">
+Let's Talk
+</a>
+<div class="menu-toggle">
 
-            <a href="#journey">Journey</a>
-
-            <a href="#about">About</a>
-
-            <a href="#contact">Contact</a>
-
-        </nav>
-
-    </header>
-
-
-    <section class="hero-section" id="home">
-
-
-
-        <!-- LEFT SIDE -->
-
-        <div class="hero-left">
-
-            <div class="mini-tag">
-                ✦ HELLO!
-            </div>
-
-            <h1>
-
-                Hi, I’m <span>Taniya Tolson</span>, <br>
-
-                <span class="typing-text"></span>
-
-            </h1>
-
-            <p>
-
-                I design clean and aesthetic web experiences focused on creating
-                modern, scalable and user-friendly digital products.
-
-                Passionate about frontend development, UI/UX design and creative coding.
-
-            </p>
-
-
-
-            <!-- HERO BUTTONS -->
-
-            <div class="hero-buttons">
-
-                <a href="#services">
-
-                    <button>
-                        Explore Services
-                    </button>
-
-                </a>
-
-
-
-                <a href="#projects">
-
-                    <button>
-                        See Projects
-                    </button>
-
-                </a>
-
-
-
-                <a href="#contact">
-
-                    <button>
-                        Contact Me
-                    </button>
-
-                </a>
-
-            </div>
-
-
-
-
-
-            <!-- SOCIAL BUTTONS -->
-
-            <div class="social-links">
-
-                <!-- CHANGE YOUR GITHUB LINK -->
-
-                <a href="https://github.com/taniya-ops" target="_blank">
-
-                    <button class="social-btn">
-                        GitHub
-                    </button>
-
-                </a>
-
-
-
-                <!-- CHANGE YOUR LINKEDIN LINK -->
-
-                <a href="https://www.linkedin.com/in/taniya-tolson-51a12337b?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">
-
-                    <button class="social-btn">
-                        LinkedIn
-                    </button>
-
-                </a>
-
-
-
-                <!-- CHANGE YOUR EMAIL -->
-
-                <a href="mailto:tolsontaniya07@gmail.com">
-
-                    <button class="social-btn">
-                        Gmail
-                    </button>
-
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-
-
-
-        <!-- RIGHT SIDE -->
-
-        <div class="hero-right">
-
-
-
-            <!-- PROFILE IMAGE -->
-
-            <!-- PUT YOUR IMAGE INSIDE images FOLDER -->
-            <!-- RENAME IMAGE TO profile.png -->
-
-            <img src="images/profile.png.jpeg" alt="profile image">
-
-
-
-            <!-- FLOATING BADGE -->
-
-            <div class="floating-badge">
-
-                3+ Projects <br>
-                UI/UX • Frontend
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-
-
-
-
-    <!-- ========================= -->
-    <!-- SERVICES SECTION -->
-    <!-- ========================= -->
-
-    <section class="services-section" id="services">
-
-        <div class="section-tag">
-            ✦ MY SERVICES
-        </div>
-
-        <h2>
-
-            Services I provide to build clean,
-            modern and scalable experiences.
-
-        </h2>
-
-
-
-
-
-        <!-- SERVICE CARDS -->
-
-        <div class="experience-card">
-
-    <div class="skill-header">
-
-        <h3>
-            Frontend Development
-        </h3>
-
-        <span>
-            90%
-        </span>
-
-    </div>
-
-    <div class="progress-bar">
-
-        <div class="progress frontend-progress"></div>
-
-    </div>
+    ☰
 
 </div>
 
+</nav>
 
+</header>
 
+<!-- HERO -->
 
+<section id="home" class="hero">
 
-            <!-- CARD 2 -->
+<div class="hero-content">
 
-            <div class="experience-card">
+<div class="status-badge">
+Available For Opportunities
+</div>
 
-    <div class="skill-header">
+<h1>
 
-        <h3>
-            UI/UX Design
-        </h3>
+Hi, I'm
 
-        <span>
-            85%
-        </span>
+<span class="highlight">
+Taniya Tolson
+</span>
 
-    </div>
+</h1>
 
-    <div class="progress-bar">
+<h2 id="typing-text"></h2>
 
-        <div class="progress ui-progress"></div>
+<p>
 
-    </div>
+I design clean, modern and scalable web experiences.
+Passionate about building projects, solving problems and continuously learning new technologies.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="primary-btn">
+See Projects
+</a>
+
+<a href="#services" class="secondary-btn">
+Explore Services
+</a>
 
 </div>
 
+<div class="tech-stack">
 
-
-
-
-            <!-- CARD 3 -->
-
-            <div class="experience-card">
-
-    <div class="skill-header">
-
-        <h3>
-            JavaScript
-        </h3>
-
-        <span>
-            75%
-        </span>
-
-    </div>
-
-    <div class="progress-bar">
-
-        <div class="progress js-progress"></div>
-
-    </div>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>React</span>
 
 </div>
 
+</div>
 
+<div class="hero-image">
 
+<div class="image-card">
 
+<img src="images/profile.png.jpeg" alt="Taniya">
 
-            <!-- CARD 4 -->
+<p>
+Full Stack Developer • Learner • Builder
+</p>
 
-            <div class="service-card blue">
+</div>
 
-                <div class="service-icon">
-                    ✦
-                </div>
+</div>
 
-                <h3>
-                    Responsive Design
-                </h3>
+</section>
 
-                <p>
+<!-- STATS -->
 
-                    Fully responsive websites optimized
-                    for desktop, tablet and mobile devices.
+<section class="stats">
 
-                </p>
+<div class="stat-card">
+<h3>3+</h3>
+<p>Projects</p>
+</div>
 
-            </div>
+<div class="stat-card">
+<h3>5+</h3>
+<p>Hackathons</p>
+</div>
 
-        </div>
+<div class="stat-card">
+<h3>10+</h3>
+<p>Technologies</p>
+</div>
 
-    </section>
+<div class="stat-card">
+<h3>1+</h3>
+<p>Years Learning</p>
+</div>
 
+</section>
 
+<!-- ABOUT -->
 
+<section id="about" class="about reveal">
 
-
-
-
-
-    <!-- ========================= -->
-    <!-- SKILLS SECTION -->
-    <!-- ========================= -->
-
-    <section class="skills-section" id="skills">
-
-        <div class="section-tag">
-            ✦ SKILLS
-        </div>
-
-        <h2>
-
-            Technologies and tools I use.
-
-        </h2>
-
-
-
-
-
-        <!-- SKILL PILLS -->
-
-        <div class="skills-wrapper">
-
-            <div class="skill-pill">HTML</div>
-
-            <div class="skill-pill">CSS</div>
-
-            <div class="skill-pill">JavaScript</div>
-
-            <div class="skill-pill">React</div>
-
-            <div class="skill-pill">Node.js</div>
-
-            <div class="skill-pill">MongoDB</div>
-
-            <div class="skill-pill">GitHub</div>
-
-            <div class="skill-pill">Figma</div>
-
-            <div class="skill-pill">Canva</div>
-
-            <div class="skill-pill">VS Code</div>
-
-            <div class="skill-pill">Responsive Design</div>
-
-            <div class="skill-pill">UI Design</div>
-
-        </div>
-
-
-
-
-
-        <!-- EXPERIENCE BAR -->
-
-        <div class="experience-box">
-
-            <div class="experience-card">
-
-                <h3>Frontend Development</h3>
-
-                <div class="progress-bar">
-
-                    <div class="progress frontend-progress"></div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="experience-card">
-
-                <h3>UI/UX Design</h3>
-
-                <div class="progress-bar">
-
-                    <div class="progress ui-progress"></div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="experience-card">
-
-                <h3>JavaScript</h3>
-
-                <div class="progress-bar">
-
-                    <div class="progress js-progress"></div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ========================= -->
-    <!-- FEATURED PROJECTS -->
-    <!-- ========================= -->
-
-    <section class="projects-section" id="projects">
-
-        <div class="section-tag">
-            ✦ FEATURED PROJECTS
-        </div>
-
-        <h2>
-
-            Projects and digital experiences I’ve built.
-
-        </h2>
-
-
-        <!-- PROJECT GRID -->
-
-        <div class="projects-grid">
-<!-- PROJECT 1 -->
-
-<div class="project-card">
-
-    <div class="project-image">
-
-        <img src="images/project1.png.jpeg" alt="project">
-
+    <div class="section-title">
+        About Me
     </div>
 
-    <h3>
-        Electricity Monitoring
-    </h3>
+    <h2>
+        Building My Future Through Technology
+    </h2>
 
     <p>
 
-        <p>
+        Hi, I'm Taniya Tolson, an aspiring Full Stack Developer passionate
+        about creating clean, responsive and meaningful digital experiences.
 
-    Smart electricity monitoring system designed to track energy consumption, monitor power usage in real time and help users improve electricity efficiency through clean and user-friendly data visualization.
+        I enjoy learning new technologies, solving real-world problems,
+        participating in hackathons and building projects that help me grow
+        as a developer.
 
-</p>
     </p>
 
-    <div class="project-buttons">
+    <div class="highlights">
 
-        <a href="https://github.com/taniya-ops" target="_blank">
+        <div class="highlight-card">
+            <h4>3+</h4>
+            <p>Projects Built</p>
+        </div>
 
-            <button>
-                GitHub
-            </button>
+        <div class="highlight-card">
+            <h4>5+</h4>
+            <p>Hackathons Joined</p>
+        </div>
 
-        </a>
+        <div class="highlight-card">
+            <h4>∞</h4>
+            <p>Always Learning</p>
+        </div>
 
-        <a href="https://greennest-home-sense.lovable.app" target="_blank">
+    </div>
 
-            <button>
-                Live Demo
-            </button>
+    <div class="journey-card">
+        <h3>Why I Started Coding</h3>
+        <p>
+            I became interested in technology because I loved creating things and solving problems.
+            Coding allows me to turn ideas into real products that people can use and enjoy.
+        </p>
+    </div>
 
-        </a>
+</section>
+<section class="education reveal">
 
+    <div class="section-title">
+        Education
+    </div>
+
+    <h2>
+        My Learning Journey
+    </h2>
+
+    <div class="education-card">
+
+        <h3>
+            B.Tech Computer Science
+        </h3>
+
+        <p>
+            Passionately learning software development,
+            web technologies and problem solving.
+        </p>
+
+    </div>
+
+</section>
+<!-- SERVICES -->
+
+<section id="services" class="services reveal">
+
+    <div class="section-title">
+        Services
+    </div>
+
+    <h2>
+        What I Deliver
+    </h2>
+    <p class="services-intro">
+
+    I focus on creating clean, modern and user-friendly digital experiences.
+    Every project is designed with performance, accessibility and aesthetics in mind.
+
+</p>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                💻
+            </div>
+
+            <h3>Web Development</h3>
+
+            <p>
+                Building modern, responsive and scalable websites using current web technologies.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                🎨
+            </div>
+
+            <h3>UI / UX Design</h3>
+
+            <p>
+                Designing clean, aesthetic and user-friendly digital experiences.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                ⚡
+            </div>
+
+            <h3>Frontend Development</h3>
+
+            <p>
+                Creating interactive interfaces with smooth animations and modern layouts.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                🚀
+            </div>
+
+            <h3>Project Development</h3>
+
+            <p>
+                Transforming ideas into complete digital solutions and portfolio projects.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="skills reveal">
+
+    <div class="section-title">
+        Skills
+    </div>
+
+    <h2>
+        Technologies & Tools
+    </h2>
+
+    <p class="skills-intro">
+
+        I enjoy building modern web applications and continuously learning
+        new technologies that help create better user experiences.
+
+    </p>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>Frontend</h3>
+
+            <div class="skill-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+
+            </div>
+        </div>
+
+        <div class="skill-card">
+
+            <h3>Programming</h3>
+
+            <div class="skill-tags">
+
+                <span>Python</span>
+                <span>Java</span>
+                <span>SQL</span>
+
+            </div>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>Tools</h3>
+
+            <div class="skill-tags">
+
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+                <span>Figma</span>
+
+            </div>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>Currently Learning</h3>
+
+            <div class="skill-tags">
+
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="tools-showcase">
+
+    <div class="tool-box">
+        💻
+        <h4>VS Code</h4>
+    </div>
+
+    <div class="tool-box">
+        🌐
+        <h4>GitHub</h4>
+    </div>
+
+    <div class="tool-box">
+        🎨
+        <h4>Figma</h4>
+    </div>
+
+    <div class="tool-box">
+        ⚡
+        <h4>JavaScript</h4>
     </div>
 
 </div>
 
-            <!-- PROJECT 2 -->
+</section>
 
-            <div class="project-card">
+<!-- PROJECTS -->
 
-                <div class="project-image">
+<section id="projects" class="projects reveal">
 
+    <div class="section-title">
+        Projects
+    </div>
 
-                    <img src="images/project2.png.jpeg" alt="project"> Project Preview
+    <h2>
+        Featured Work
+    </h2>
 
-                </div>
+    <p class="projects-intro">
+
+        A collection of projects that showcase my skills in web development,
+        problem solving and modern user interface design.
+
+    </p>
+
+    <div class="projects-grid">
+
+        <!-- Project 1 -->
+
+        <div class="project-card">
+
+            <img src="images/project1.png.jpeg" alt="Education Platform">
+
+            <div class="project-content">
+
+                <span class="project-tag">
+                    Web Development
+                </span>
 
                 <h3>
-                    Confidence Building
+                  Electricity monitoring platform
                 </h3>
 
                 <p>
-
-                    <p>
-
-    A confidence building platform designed to help users improve self-confidence through daily challenges, motivational activities, personal growth tracking and interactive self-development exercises.
-
-</p>
-
+                    A web application that allows users to monitor and analyze their electricity usage in real-time.
                 </p>
-
-
 
                 <div class="project-buttons">
 
-                    <a href="https://github.com/taniya-ops" target="_blank">
-
-                        <button>
-                            GitHub
-                        </button>
-
+                    <a href="https://github.com/taniya-ops" class="github-btn">
+                        GitHub
                     </a>
 
-
-
-                    <a href="https://confidenceboost.vercel.app/" target="_blank">
-
-                        <button>
-                            Live Demo
-                        </button>
-
+                    <a href="https://greennest-home-sense.lovable.app" class="demo-btn">
+                        Live Demo
                     </a>
 
                 </div>
 
             </div>
 
+        </div>
 
+        <!-- Project 2 -->
 
+        <div class="project-card">
 
+            <img src="images/project2.png.jpeg" alt="Portfolio">
 
+            <div class="project-content">
 
-
-            <!-- PROJECT 3 -->
-
-            <div class="project-card">
-
-                <div class="project-image">
-
-                    <img src="images/project3.png.jpeg" alt="project"> Project Preview
-
-                </div>
+                <span class="project-tag">
+                    Frontend
+                </span>
 
                 <h3>
-                    Portfolio Website
+                    confidence building app
                 </h3>
 
                 <p>
-
-                    Personal portfolio website with
-                    aesthetic pastel modern UI design.
-
+                    A modern mobile app designed to help users build confidence through interactive exercises and positive reinforcement.
                 </p>
-
-
 
                 <div class="project-buttons">
 
-                    <a href="https://github.com/taniya-ops" target="_blank">
-
-                        <button>
-                            GitHub
-                        </button>
-
+                    <a href="https://github.com/taniya-ops" class="github-btn">
+                        GitHub
                     </a>
 
-
-
-                    <a href="https://yourwebsite.com" target="_blank">
-
-                        <button>
-                            Live Demo
-                        </button>
-
+                    <a href="https://confidenceboost.vercel.app/" class="demo-btn">
+                        Live Demo
                     </a>
 
                 </div>
@@ -610,314 +500,109 @@
 
         </div>
 
-    </section>
+    </div>
 
+</section>
+<!-- CONTACT -->
 
+<section id="contact" class="contact reveal">
 
+    <div class="section-title">
+        Contact
+    </div>
 
+    <h2>
+        Let's Build Something Amazing Together
+    </h2>
 
+    <p class="contact-intro">
 
+        Whether it's a project, internship opportunity, collaboration,
+        or simply a conversation about technology, I'd love to hear from you.
 
+    </p>
 
+    <div class="contact-grid">
 
-    <!-- ========================= -->
-    <!-- JOURNEY SECTION -->
-    <!-- ========================= -->
+        <div class="contact-card">
 
-    <section class="journey-section" id="journey">
-
-        <div class="section-tag">
-            ✦ MY JOURNEY
-        </div>
-
-        <h2>
-
-            How my journey into tech started.
-
-        </h2>
-
-        <p>
-
-            My journey started with curiosity about how websites are designed and built.
-            I slowly explored frontend development, UI/UX design and modern web technologies.
-
-            I enjoy transforming creative ideas into functional and visually engaging digital products.
-
-        </p>
-
-
-
-
-
-        <!-- JOURNEY CARDS -->
-
-        <div class="journey-grid">
-
-            <div class="journey-card">
-
-                <h3>Started Learning</h3>
-
-                <p>
-
-                    Began learning HTML, CSS and basic frontend development.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="journey-card">
-
-                <h3>Built Projects</h3>
-
-                <p>
-
-                    Created portfolio projects and responsive UI designs.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="journey-card">
-
-                <h3>Exploring Full Stack</h3>
-
-                <p>
-
-                    Currently learning backend development and scalable applications.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-
-
-
-
-
-    <!-- ========================= -->
-    <!-- ABOUT SECTION -->
-    <!-- ========================= -->
-
-    <section class="about-section" id="about">
-
-        <div class="about-left">
-
-            <!-- SAME PROFILE IMAGE -->
-
-            <img src="images/profile.jpeg" alt="about image">
-
-        </div>
-
-
-
-
-
-        <div class="about-right">
-
-            <div class="section-tag">
-                ✦ ABOUT ME
-            </div>
-
-            <h2>
-
-                More about me.
-
-            </h2>
+            <h3>Email</h3>
 
             <p>
-
-                I’m Taniya Tolson, an aspiring full stack developer passionate
-                about creating clean, aesthetic and user-friendly digital experiences.
-
-                I love blending creativity with technology to build meaningful projects
-                that people genuinely enjoy using.
-
+                tolsontaniya07@gmail.com
             </p>
 
-
-
-
-
-            <!-- STATS -->
-
-            <div class="stats-grid">
-
-                <div class="stats-card">
-
-                    <h3>3+</h3>
-
-                    <p>Projects</p>
-
-                </div>
-
-
-
-                <div class="stats-card">
-
-                    <h3>5+</h3>
-
-                    <p>Hackathons</p>
-
-                </div>
-
-
-
-                <div class="stats-card">
-
-                    <h3>100%</h3>
-
-                    <p>Passion</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-
-
-
-
-
-
-    <!-- ========================= -->
-    <!-- CONTACT SECTION -->
-    <!-- ========================= -->
-
-    <section class="contact-section" id="contact">
-
-        <div class="section-tag">
-            ✦ CONTACT
-        </div>
-
-        <h2>
-
-            Ready to collaborate?
-
-        </h2>
-
-        <p>
-
-            Let’s create something meaningful together.
-
-        </p>
-
-
-
-
-
-        <!-- CONTACT BUTTONS -->
-
-        <div class="contact-buttons">
-
-            <!-- CHANGE YOUR EMAIL -->
-
-            <a href="tolsontaniya07@gmail.com">
-
-                <button>
-                    Email Me
-                </button>
-
+            <a href="mailto:tolsontaniya07@gmail.com">
+                Send Email
             </a>
 
+        </div>
 
+        <div class="contact-card">
 
+            <h3>GitHub</h3>
 
-
-            <!-- CHANGE YOUR GITHUB -->
+            <p>
+                github.com/taniya-ops
+            </p>
 
             <a href="https://github.com/taniya-ops" target="_blank">
-
-                <button>
-                    GitHub
-                </button>
-
-            </a>
-
-
-
-
-
-            <!-- CHANGE YOUR LINKEDIN -->
-
-            <a href=https://www.linkedin.com/in/taniya-tolson-51a12337b?utm_source=share_via&utm_content=profile&utm_medium=member_ios target="_blank">
-
-                <button>
-                    LinkedIn
-                </button>
-
+                View Profile
             </a>
 
         </div>
 
+        <div class="contact-card">
 
-
-
-
-        <!-- CONTACT INFO -->
-
-        <div class="contact-info">
+            <h3>LinkedIn</h3>
 
             <p>
-                Email : tolsontaniya07@gmail.com
+                linkedin.com/in/Taniya Tolson
             </p>
 
-            <p>
-                GitHub : github.com/taniya-ops
-            </p>
-
-            <p>
-                LinkedIn : linkedin.com/in/taniya-tolson
-            </p>
+            <a href="https://www.linkedin.com/in/taniya-tolson-51a12337b?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">
+                Connect
+            </a>
 
         </div>
 
-    </section>
+    </div>
 
+</section>
 
+<footer>
 
+    <div class="footer-content">
 
-
-
-
-    <!-- ========================= -->
-    <!-- FOOTER -->
-    <!-- ========================= -->
-
-    <footer>
+        <h3>
+            Taniya Tolson
+        </h3>
 
         <p>
+            Aspiring Full Stack Developer passionate about creating modern digital experiences.
+        </p>
 
-            © 2026 Taniya Tolson • Designed & Developed with passion.
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2025 Taniya Tolson. All Rights Reserved.
 
         </p>
 
-    </footer>
+    </div>
 
+</footer>
 
-
-
-
-    <!-- JS FILE -->
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
